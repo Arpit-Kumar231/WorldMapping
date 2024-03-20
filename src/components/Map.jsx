@@ -12,7 +12,6 @@ import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
-const API_KEY2 = "tune-de592e91-eb27-422e-a502-9fe21b329e471709284355";
 
 const Map = () => {
   const [searchParams] = useSearchParams();
@@ -27,7 +26,7 @@ const Map = () => {
       const options = {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${API_KEY2}`,
+          Authorization: `Bearer 8093hdkdnkukdbjuxi1729202`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
