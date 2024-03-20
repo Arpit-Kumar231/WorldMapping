@@ -1,3 +1,136 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "id": "e85d",
+      "cityName": "Dungu",
+      "country": "Congo (the Democratic Republic of the)",
+      "emoji": "🇨🇩",
+      "date": "2024-01-19T06:34:39.340Z",
+      "notes": "",
+      "position": {
+        "lat": "4.12728532324537",
+        "lng": "27.575683593750004"
+      }
+    },
+    {
+      "id": "379a",
+      "cityName": "Damara",
+      "country": "Central African Republic (the)",
+      "emoji": "🇨🇫",
+      "date": "2024-01-19T15:35:06.421Z",
+      "notes": "Good place\n",
+      "position": {
+        "lat": "5.025282908609298",
+        "lng": "18.303222656250004"
+      }
+    },
+    {
+      "id": "1f7c",
+      "cityName": "Yelbarga",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-01-19T11:19:04.753Z",
+      "notes": "",
+      "position": {
+        "lat": "15.580710739162123",
+        "lng": "76.025390625"
+      }
+    },
+    {
+      "id": "8e60",
+      "cityName": "Australian Antarctic Territory",
+      "country": "Antarctica",
+      "emoji": "🇦🇶",
+      "date": "2024-01-19T21:06:08.994Z",
+      "notes": "",
+      "position": {
+        "lat": "-71.18775391813159",
+        "lng": "103.35937500000001"
+      }
+    },
+    {
+      "id": "4486",
+      "cityName": "Chengalpattu",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-01-20T04:14:32.110Z",
+      "notes": "",
+      "position": {
+        "lat": "12.69058360183578",
+        "lng": "79.97497558593751"
+      }
+    },
+    {
+      "id": "f0c0",
+      "cityName": "Ruoqiang",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2024-01-20T06:56:03.851Z",
+      "notes": "",
+      "position": {
+        "lat": "39.36827914916014",
+        "lng": "88.2421875"
+      }
+    },
+    {
+      "id": "f5ea",
+      "cityName": "Markaz al Waḩat ad Dakhilah",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2024-01-20T09:59:14.825Z",
+      "notes": "",
+      "position": {
+        "lat": "24.206889622398023",
+        "lng": "27.949218750000004"
+      }
+    },
+    {
+      "id": "4318",
+      "cityName": "Baliet",
+      "country": "South Sudan",
+      "emoji": "🇸🇸",
+      "date": "2024-01-20T13:38:42.218Z",
+      "notes": "",
+      "position": {
+        "lat": "9.654907854199024",
+        "lng": "32.34375000000001"
+      }
+    },
+    {
+      "id": "0933",
+      "cityName": "Madurai",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-01-20T13:40:16.673Z",
+      "notes": "skdj",
+      "position": {
+        "lat": "9.882275493429953",
+        "lng": "78.15673828125001"
+      }
+    },
+    {
+      "id": "d693",
+      "cityName": "Tiruchuli",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-01-20T13:41:15.487Z",
+      "notes": "",
+      "position": {
+        "lat": "9.730714305756955",
+        "lng": "78.23364257812501"
+      }
+    },
+    {
+      "id": "6f79",
+      "cityName": "Garissa",
+      "country": "Kenya",
+      "emoji": "🇰🇪",
+      "date": "2024-01-20T13:45:15.384Z",
+      "notes": "",
+      "position": {
+        "lat": "0.024032592068740033",
+        "lng": "39.9924659729004"
+      }
+    }
+  ]
 }

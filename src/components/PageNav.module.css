@@ -24,6 +24,9 @@
 .nav a:global(.active) {
   color: var(--color-brand--2);
 }
+.navLogo {
+  color: black;
+}
 
 a.ctaLink:link,
 a.ctaLink:visited {

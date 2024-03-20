@@ -8,16 +8,17 @@ export default function Homepage() {
       <PageNav />
       <section>
         <h1>
-          You travel the world.
+          Travel the world.
           <br />
-          WorldWise keeps track of your adventures.
+          Add the cities to the World Mapper
         </h1>
         <h2>
-          A world map that tracks your footsteps into every city you can think
-          of. Never forget your wonderful experiences, and show your friends how
-          you have wandered the world.
+          A World Mapper to visit all the cities you want with just a single
+          click and enjoy it with anyone that you want
         </h2>
-        <Link to='/app' className="cta">Start Tracking Now</Link>
+        <Link to="/app" className="cta">
+          Navigation Starts Here
+        </Link>
       </section>
     </main>
   );
