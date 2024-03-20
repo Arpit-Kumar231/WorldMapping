@@ -15,54 +15,57 @@ export function convertToEmoji(countryCode) {
     .map((char) => 127397 + char.charCodeAt());
   return String.fromCodePoint(...codePoints);
 }
-const url = "https://api.bigdatacloud.net/data/reverse-geocode-client"
+const url = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 function Form() {
-  const {createCity} = useCities();
+  const { createCity } = useCities();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
   const Navigate = useNavigate();
-  const [lat,lng] = useUrlPosition();
-  const [isLoadinggeo,setisLoadinggeo] = useState(false);
-  const [emoji,setemoji] = useState("");
-  const [error,seterror] = useState("");
-  async function HandleSubmit(e){
+  const [lat, lng] = useUrlPosition();
+  const [isLoadinggeo, setisLoadinggeo] = useState(false);
+  const [emoji, setemoji] = useState("");
+  const [error, seterror] = useState("");
+  async function HandleSubmit(e) {
     e.preventDefault();
     if (!cityName || !date) return;
     const newCity = {
       cityName,
-      country,emoji,
-      date,notes,position: {lat,lng},
+      country,
+      emoji,
+      date,
+      notes,
+      position: { lat, lng },
     };
     await createCity(newCity);
-    Navigate('/app/cities');
+    Navigate("/app/cities");
   }
 
-  useEffect(function() {
-    async function fetchcitydata(){
-      try{
-        setisLoadinggeo(true);
-        const res = await fetch(`${url}?latitude=${lat}&longitude=${lng}`);
-        const data = await res.json();
-        seterror('');
-        if(!data.countryCode) throw new Error("that doesn't seem to be a city");
-        console.log(data);
-        setCityName(data.city || data.locality || 'pop');
-        setCountry(data.countryName);
-        setemoji(convertToEmoji(data.countryCode))
-      }
-      catch(err){
-        seterror(err);
-        
+  useEffect(
+    function () {
+      async function fetchcitydata() {
+        try {
+          setisLoadinggeo(true);
+          const res = await fetch(`${url}?latitude=${lat}&longitude=${lng}`);
+          const data = await res.json();
+          seterror("");
+          if (!data.countryCode)
+            throw new Error("that doesn't seem to be a city");
 
-      }finally{
-        setisLoadinggeo(false);
+          setCityName(data.city || data.locality || "pop");
+          setCountry(data.countryName);
+          setemoji(convertToEmoji(data.countryCode));
+        } catch (err) {
+          seterror(err);
+        } finally {
+          setisLoadinggeo(false);
+        }
       }
-    }
-    fetchcitydata();
-  },[lat,lng,seterror])
-   
+      fetchcitydata();
+    },
+    [lat, lng, seterror]
+  );
 
   return (
     <form className={styles.form} onSubmit={HandleSubmit}>
@@ -73,8 +76,7 @@ function Form() {
           onChange={(e) => setCityName(e.target.value)}
           value={cityName}
         />
-        { <span className={styles.flag}>{emoji}</span> }
-        
+        {<span className={styles.flag}>{emoji}</span>}
       </div>
 
       <div className={styles.row}>
@@ -97,9 +99,15 @@ function Form() {
 
       <div className={styles.buttons}>
         <Button type="primary">Add</Button>
-        <Button type="back" onClick={(e) => {
-          e.preventDefault();
-          Navigate(-1)}}>&larr; Back</Button>
+        <Button
+          type="back"
+          onClick={(e) => {
+            e.preventDefault();
+            Navigate(-1);
+          }}
+        >
+          &larr; Back
+        </Button>
       </div>
     </form>
   );

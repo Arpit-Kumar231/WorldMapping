@@ -37,42 +37,6 @@
       }
     },
     {
-      "id": "8e60",
-      "cityName": "Australian Antarctic Territory",
-      "country": "Antarctica",
-      "emoji": "🇦🇶",
-      "date": "2024-01-19T21:06:08.994Z",
-      "notes": "",
-      "position": {
-        "lat": "-71.18775391813159",
-        "lng": "103.35937500000001"
-      }
-    },
-    {
-      "id": "4486",
-      "cityName": "Chengalpattu",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2024-01-20T04:14:32.110Z",
-      "notes": "",
-      "position": {
-        "lat": "12.69058360183578",
-        "lng": "79.97497558593751"
-      }
-    },
-    {
-      "id": "f0c0",
-      "cityName": "Ruoqiang",
-      "country": "China",
-      "emoji": "🇨🇳",
-      "date": "2024-01-20T06:56:03.851Z",
-      "notes": "",
-      "position": {
-        "lat": "39.36827914916014",
-        "lng": "88.2421875"
-      }
-    },
-    {
       "id": "f5ea",
       "cityName": "Markaz al Waḩat ad Dakhilah",
       "country": "Egypt",
@@ -130,6 +94,66 @@
       "position": {
         "lat": "0.024032592068740033",
         "lng": "39.9924659729004"
+      }
+    },
+    {
+      "id": "9a5b",
+      "cityName": "Chengalpattu",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-03-20T10:57:40.864Z",
+      "notes": "",
+      "position": {
+        "lat": "12.768276774293948",
+        "lng": "79.96536254882814"
+      }
+    },
+    {
+      "id": "0682",
+      "cityName": "Kanchipuram",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-03-20T10:59:54.992Z",
+      "notes": "",
+      "position": {
+        "lat": "12.819835795356386",
+        "lng": "79.77447509765626"
+      }
+    },
+    {
+      "id": "cdb1",
+      "cityName": "Garissa",
+      "country": "Kenya",
+      "emoji": "🇰🇪",
+      "date": "2024-03-20T11:02:23.725Z",
+      "notes": "",
+      "position": {
+        "lat": "0.026178359074534748",
+        "lng": "39.99220848083497"
+      }
+    },
+    {
+      "id": "9550",
+      "cityName": "Garissa",
+      "country": "Kenya",
+      "emoji": "🇰🇪",
+      "date": "2024-03-20T11:02:57.660Z",
+      "notes": "it was a good place",
+      "position": {
+        "lat": "0.02514839091614754",
+        "lng": "39.992809295654304"
+      }
+    },
+    {
+      "id": "ba14",
+      "cityName": "Sriperumbudur",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-03-20T11:03:56.143Z",
+      "notes": "",
+      "position": {
+        "lat": "12.832598372494653",
+        "lng": "80.02389907836914"
       }
     }
   ]
