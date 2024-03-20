@@ -1,7 +1,7 @@
 # World Mapper
 ### This is a website which allows you to add places from all around the world Map and add your notes about it other than that it gives features like realtime location fetching which essentially allows you to add your own current location on the map which just the click of a button
 
-## a exciting feature on this app is that it has AI features that means it gives realtime data on the city that you selected through the api
+## A exciting feature on this app is that it has AI features that means it gives realtime data on the city that you selected through the api
 
 ## Some Images
 ![Screenshot 2024-03-20 163429](https://github.com/Arpit-Kumar231/WorldMapping/assets/142097093/b761613d-ccf2-4035-a8d3-b4611c4e7103)
