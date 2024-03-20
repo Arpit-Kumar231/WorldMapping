@@ -54,7 +54,37 @@ const Map = () => {
         console.error(err);
       }
     }
+    async function diffrentLLm() {
+      const options = {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${API_KEY3}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          model: "gemma-7b-it",
+          messages: [
+            {
+              role: "user",
+              content: `${req.body.message}  `,
+            },
+          ],
+          max_tokens: 500,
+        }),
+      };
+      try {
+        const response = await fetch(
+          "https://chat.tune.app/api/chat/completions",
+          options
+        );
+        const data = await response.json();
+        res.send(data);
+      } catch (err) {
+        console.error(err);
+      }
+    }
     fetchData();
+    diffrentLLm();
   }, [data]);
   const {
     isLoading: isLoadpos,
